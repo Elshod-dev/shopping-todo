@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping TODO</title>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="shopping-box container">
+      <form class="shopping-form">
+        <div class="shopping-div">
+          <label for="name">Product name:</label>
+          <input placeholder="Name..." id="name" type="text" />
+        </div>
+        <div class="shopping-div">
+          <label for="quantity">Product quantity:</label>
+          <input placeholder="Quantity..." id="quantity" type="number" />
+        </div>
+        <div class="shopping-div">
+          <label for="price">Product price</label>
+          <input placeholder="Price..." id="price" type="number" />
+        </div>
+        <button id="btn">Create</button>
+      </form>
+      <section id="shopping-section" class="shopping-section">
+        <table class="shopping-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <h2 id="notFound" class="notFound">Products not found!</h2>
+        <div class="total-div">
+          <div class="shopping-total">Total: <span>0</span></div>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
