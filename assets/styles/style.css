@@ -179,6 +179,7 @@ button {
     width: 100%;
     align-items: center;
     justify-content: center;
+    gap: 6px;
 }
 
 @media screen and (max-width:767px) {
