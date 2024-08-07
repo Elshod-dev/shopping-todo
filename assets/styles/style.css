@@ -99,6 +99,7 @@ button {
     width: 100%;
     border-collapse: collapse;
     min-width: 700px;
+    display: none;
 }
 
 .shopping-table th,
@@ -174,8 +175,10 @@ button {
 }
 
 .notFound {
-    text-align: center;
-    margin-block: 32px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width:767px) {
@@ -198,5 +201,9 @@ button {
     .shopping-form button {
         min-height: 40px;
         font-size: 16px;
+    }
+
+    .notFound {
+        font-size: 20px;
     }
 }

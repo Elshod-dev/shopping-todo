@@ -4,6 +4,7 @@ const nameInput = document.querySelector("#name");
 const quantityInput = document.querySelector("#quantity");
 const priceInput = document.querySelector("#price");
 const tableBody = document.querySelector(".shopping-table tbody");
+const shoppingTable = document.querySelector(".shopping-table ");
 const totalDiv = document.querySelector(".total-div");
 const totalDivSpan = document.querySelector(".shopping-total span");
 const btn = document.querySelector("#btn");
@@ -19,11 +20,13 @@ const formatPrice = (price) => {
 const updateTable = () => {
   tableBody.innerHTML = "";
   if (items.length === 0) {
-    notFoundMessage.style.display = "block";
+    notFoundMessage.style.display = "flex";
     totalDiv.style.display = "none";
+    shoppingTable.style.display = "none";
   } else {
     notFoundMessage.style.display = "none";
     totalDiv.style.display = "flex";
+    shoppingTable.style.display = "table";
 
     items.forEach((item, index) => {
       const row = document.createElement("tr");
