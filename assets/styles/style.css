@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
 
+:root {
+    --main-color: #15768e
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -59,7 +63,7 @@ button {
 }
 
 .shopping-form .shopping-div label {
-    color: #5D5FEF;
+    color: var(--main-color);
     font-size: 18px;
 }
 
@@ -68,14 +72,14 @@ button {
     border-radius: 8px;
     font-size: 20px;
     font-weight: 400;
-    color: #5D5FEF;
-    border: 1px solid #5D5FEF;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
     min-height: 50px;
     width: 100%;
 }
 
 .shopping-form input::placeholder {
-    color: rgb(104, 106, 244, 0.8);
+    color: var(--main-color);
 }
 
 .shopping-form button {
@@ -84,7 +88,7 @@ button {
     font-size: 22px;
     font-weight: 600;
     color: #fff;
-    background: #5D5FEF;
+    background: var(--main-color);
     border-radius: 5px;
     flex-grow: 1;
 }
